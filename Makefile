@@ -9,7 +9,7 @@ BOOST_INC = /usr/include
 BOOST_LIB = /usr/lib
  
 # compile mesh classes
-TARGET = edn_wrapper
+TARGET = edn_py
  
 $(TARGET).so: $(TARGET).o
 	g++ -shared -Wl,--export-dynamic $(TARGET).o -L$(BOOST_LIB) -lboost_python -L/usr/lib/python$(PYTHON_VERSION)/config -lpython$(PYTHON_VERSION) -o $(TARGET).so

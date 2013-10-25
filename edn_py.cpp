@@ -21,7 +21,7 @@ namespace wrapper
     // EdnNode class
 
 
-    BOOST_PYTHON_MODULE(edn_wrapper)
+    BOOST_PYTHON_MODULE(edn_py)
     {
         using namespace boost::python;
         def("read", read);
